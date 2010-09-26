@@ -1,0 +1,21 @@
+<script type="text/javascript">
+$(window).resize(function() {
+    $("#home-content").height(
+        $("#main-center").height() -
+        $("#home-header").outerHeight() -
+        20);
+});
+</script>
+<div class="box fluid-width ui-widget ui-widget-content ui-corner-all">
+    <div id="home-header" class="ui-widget-header">Welcome</div>
+    <div class="ui-padding">
+        <div id="home-content" class="box ui-widget ui-widget-content ui-padding ui-corner-all" style="overflow-y:scroll;">
+            <h2>About this site</h2>
+            <p>This experimental site consists purely of html and javascript. There is no database, no server-side code. Templates are all ajax loaded so there is no need for page refresh.</p>
+            <p>If you click on the Projects menu item, the list of projects is pulled in by making an ajax request to the Ruby on Rails <a href="http://zuke.sandbox.zmdev.net:3000/">Project Browser</a> (also in development). This site is basically a bunch of html containers and some jQuery that triggers http REST requests to an off-site Rails project which returns data in json format.</p>
+            <p>At the moment, the Project Browser cannot receive cross-domain ajax requests, so this site proxies it's requests through a simple PHP script that forwards the request and returns data to the client using file_get_contents() to send/receive data from Rails. We'll need to look into setting up jsonp support in Rails so we can make cross-domain requests straight from jQuery.</p>
+            <h2>Want to help?</h2>
+            <p>Come to TeamSpeak and ask for Zuke, Cluster, or Youanden. One of those guys should know a little something about this.</p>
+        </div>
+    </div>
+</div>

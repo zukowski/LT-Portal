@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>ZM Linguistic Team</title>
+<link rel="stylesheet" href="/resources/jquery-ui-1.8.5.custom/css/cupertino/jquery-ui-1.8.5.custom.css" />
+<link rel="stylesheet" href="/resources/css/table.css" />
+<link rel="stylesheet" href="/resources/css/style.css" />
+<script type="text/javascript" src="/resources/jquery-ui-1.8.5.custom/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="/resources/jquery-ui-1.8.5.custom/js/jquery-ui-1.8.5.custom.min.js"></script>
+<script type="text/javascript" src="/resources/js/zmui.js"></script>
+<script type="text/javascript" src="/resources/js/jquery.dataTable.min.js"></script>
+<script type="text/javascript">
+var ltApp = null;
+$(document).ready(function() {
+    LTP = new ZMUI();
+    LTP.init();
+    LTP.getTemplate(window.location.pathname,'main-center');
+});
+</script>
+</head>
+<body>
+<div id="header">
+    <div class="logo"><span class="zm-box">ZM</span> Linguistic Team</div>
+
+    <ul class="header-menu">
+        <li><a href="">Get Involved</a></li> |
+        <li><a href="">Projects</a></li> |
+        <li><a href="">Forum</a></li> |
+        <li><a href="">Repository</a></li> |
+        <li><a href="">Docs</a></li>
+        <li><a class="log-in" href="">LOG IN</a></li>
+    </ul>
+</div>
+<div id="main">
+    <div id="main-left" class="col fixed-width">
+        <div class="box ui-widget ui-widget-content ui-corner-all">
+            <div class="ui-widget-header">Main Menu</div>
+            <ul class="menu">
+                <li><a href="javascript:LTP.getTemplate('home','main-center');">Home</a></li>
+                <li><a href="javascript:LTP.getTemplate('projects','main-center',LTP.getProjectList);">Projects</a></li>
+                <li><a href="">Forum</a></li>
+                <li><a href="">Calendar</a></li>
+                <li><a href="">Repository</a></li>
+                <li><a href="">Help Center</a></li>
+            </ul>
+        </div>
+        <div class="box ui-widget ui-widget-content ui-corner-all">
+            <div class="ui-widget-header">Project Menu</div>
+            <ul class="menu">
+                <li><a href="">My Projects</a></li>
+                <li><a href="">Browse Projects</a></li>
+            </ul>
+        </div>
+        <div class="box ui-widget ui-widget-content ui-corner-all">
+            <div class="ui-widget-header">User Menu</div>
+            <ul class="menu">
+                <li><a href="">My ZM Account</a></li>
+                <li><a href="">My LT Profile</a></li>
+                <li><a href="">Send Private Message</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="main-center" class="col fluid-width fluid-height"></div>
+    <div id="main-right" class="col fixed-width fluid-height">
+        <div class="box ui-widget ui-widget-content ui-corner-all">
+            <div class="ui-widget-header">Updates</div>
+                <div class="update-list ui-padding">
+                    <div class="update-item ui-widget ui-widget-content ui-corner-all ui-padding"> 
+                        <strong>September 23, 2010</strong><br />
+                        <p>LT Portal version x.x.xx released.<br />New features include:<ul><li>Instant Messager</li><li>Interactive Activity Log</li></ul><a href="">Full Release Notes</a></p>
+                    </div>
+                    <div class="ui-widget ui-widget-content ui-corner-all ui-padding"> 
+                        <strong>September 19, 2010</strong><br />
+                        <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc.</p>
+                    </div>
+
+                </div>   
+            </div>
+    </div>
+</div>
+
+</div>
+</body>
+</html>
